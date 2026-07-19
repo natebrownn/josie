@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>LOVE OS Music</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container music-player">
+
+
+<h1>💿 MUSIC SYSTEM</h1>
+
+
+<p>
+Now Playing...
+</p>
+
+
+<div class="cd-container">
+
+<img src="images/cd.png" class="spinning-cd">
+
+</div>
+
+
+<h2>
+Futile Devices
+</h2>
+
+
+<p>
+Sufjan Stevens
+</p>
+
+
+
+<div class="progress-bar">
+
+<div class="progress"></div>
+
+</div>
+
+
+
+<button onclick="playSong()">
+▶ Play
+</button>
+
+
+
+<a href="index.html">
+
+<button>
+Return to Desktop
+</button>
+
+</a>
+
+
+<p id="music-status">
+System Ready
+</p>
+
+
+</div>
+
+
+
+<script>
+
+function playSong(){
+
+document.getElementById("music-status").innerHTML =
+"♪ Playing Futile Devices ♪";
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
