@@ -512,3 +512,30 @@ linear-gradient(
 
 
 }
+/* MUSIC GLOW */
+
+.music-player {
+
+animation: glow 4s infinite alternate;
+
+}
+
+
+@keyframes glow {
+
+from {
+
+box-shadow:
+0 0 30px rgba(255,255,255,.4);
+
+}
+
+
+to {
+
+box-shadow:
+0 0 60px rgba(0,220,255,.8);
+
+}
+
+}
