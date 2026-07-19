@@ -150,3 +150,63 @@ button:hover{
     }
 
 }
+.icons {
+
+display:flex;
+
+justify-content:center;
+
+gap:70px;
+
+margin-top:50px;
+
+}
+
+
+.app {
+
+text-align:center;
+
+transition:.4s;
+
+}
+
+
+.app img {
+
+width:120px;
+
+height:120px;
+
+object-fit:contain;
+
+filter:drop-shadow(0 0 15px white);
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+
+.app:hover {
+
+transform:translateY(-15px);
+
+}
+
+
+.app img:hover {
+
+transform:scale(1.15) rotate(5deg);
+
+}
+
+
+.app p {
+
+color:white;
+
+font-weight:bold;
+
+}
