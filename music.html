@@ -50,8 +50,20 @@ Sufjan Stevens
 
 
 
+<audio id="song">
+
+<source src="music/futile-devices.mp3" type="audio/mpeg">
+
+</audio>
+
+
 <button onclick="playSong()">
 ▶ Play
+</button>
+
+
+<button onclick="pauseSong()">
+⏸ Pause
 </button>
 
 
@@ -76,10 +88,28 @@ System Ready
 
 <script>
 
+let song = document.getElementById("song");
+
+
 function playSong(){
+
+song.play();
+
 
 document.getElementById("music-status").innerHTML =
 "♪ Playing Futile Devices ♪";
+
+}
+
+
+
+function pauseSong(){
+
+song.pause();
+
+
+document.getElementById("music-status").innerHTML =
+"Music paused";
 
 }
 
