@@ -3,85 +3,123 @@
 
 <head>
 
-<title>LOVE OS</title>
+<title>LOVE OS Login</title>
 
 <link rel="stylesheet" href="style.css">
 
 </head>
 
 
-<body>
+<body class="login-screen">
 
 
-<div class="bubble" style="width:80px;height:80px;left:10%;"></div>
-<div class="bubble" style="width:120px;height:120px;left:40%;"></div>
-<div class="bubble" style="width:60px;height:60px;left:75%;"></div>
+<div class="login-box">
 
 
-<div class="container">
+<h1>
+LOVE OS
+</h1>
 
-<h1>LOVE OS</h1>
 
 <p>
-ᯤ All Systems Online. ᯤ
-</p>
-
-<p>
-(˶ᵔ ᵕ ᵔ˶)ノ Welcome to your personal system, Jose.
+Welcome back.
 </p>
 
 
-<div class="icons">
-
-
-<div class="app">
-
-<a href="mail.html">
-
-<img src="wlm.ico">
-
-</a>
-
-<p>｡𖦹°‧ mail 🌐</p>
-
-</div>
+<p>
+Please enter username:
+</p>
 
 
 
-<div class="app">
-
-<a href="music.html">
-
-<img src="itunes1.ico">
-
-</a>
-
-<p>⋆.˚ tunes 𝄞</p>
-
-</div>
+<input 
+id="username"
+placeholder="Username"
+>
 
 
 
-<div class="app">
+<br>
 
-<a href="pets.html">
 
-<img src="tumblr_0364e52563e5ba2639b0aa9a63a8d792_04fe29b9_1280.png">
+<button onclick="login()">
 
-</a>
+Login
 
-<p>╰┈➤luna.ioˎˊ˗</p>
+</button>
 
-</div>
+
+
+<button onclick="hint()">
+
+Hint
+
+</button>
+
+
+
+<p id="message"></p>
 
 
 
 </div>
 
 
-</div>
 
-<script src="script.js"></script>
+<script>
+
+
+function hint(){
+
+document.getElementById("message").innerHTML =
+"Your nickname + and + Your pet's name + @iNate.com";
+
+}
+
+
+
+function login(){
+
+
+let username =
+document.getElementById("username").value;
+
+
+
+if(username === "jjandluna@iNate.com"){
+
+
+document.getElementById("message").innerHTML =
+"Access Granted... Loading LOVE OS 💙";
+
+
+setTimeout(function(){
+
+window.location.href="desktop.html";
+
+},2000);
+
+
+
+}
+
+else{
+
+
+document.getElementById("message").innerHTML =
+"Access Denied. Try again.";
+
+}
+
+
+}
+
+
+
+</script>
+
+
 </body>
+
 
 </html>
