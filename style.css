@@ -300,3 +300,49 @@ box-shadow:
 0 0 15px white;
 
 }
+/* PET APP */
+
+
+.pet {
+
+width:220px;
+
+transition:.3s;
+
+filter:
+drop-shadow(0 0 20px white);
+
+}
+
+
+
+.pet-health {
+
+height:100%;
+
+width:20%;
+
+background:
+linear-gradient(
+90deg,
+#8fffc1,
+#00d9ff
+);
+
+border-radius:20px;
+
+transition:.5s;
+
+}
+
+
+
+#hearts {
+
+font-size:2rem;
+
+height:40px;
+
+margin:15px;
+
+}
